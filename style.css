@@ -21,12 +21,8 @@ body {
     border: 3px solid rgb(247, 151, 159);
     border-radius: 50%;
     box-shadow: 0px 0px 10px rgba(247, 151, 159, 0.3);
-    transition: 0.5s;
-}
-
-.profile img:hover {
-    height: 140px;
-    box-shadow: 0px 0px 10px rgba(247, 151, 159, 1);
+    transition: 0.2s;
+    animation: float 3s ease-in-out infinite;
 }
 
 .profile p {
@@ -50,6 +46,7 @@ ul {
    padding: 10px;
    text-align: center;
    list-style: none;
+   transition: transform 0.2s;
 }
 
 .name {
@@ -58,10 +55,11 @@ ul {
 
 .information ul li:hover {
     background-color: rgba(247, 151, 159, 0.6);
-    width: 300px;;
+    width: fit-content;
     border-radius: 150px;
     color: whitesmoke;
     margin: auto;
+    transform: translateY(-10%);
 }
 
 .social-links {
@@ -103,4 +101,13 @@ ul {
     top: 10%;
     opacity: 0.2;
     filter: blur(80px);
+}
+
+@keyframes float {
+    0%,100% {
+        transform: translateY(-4%);
+    }
+    50% {
+        transform: translateY(4%);
+    }
 }
