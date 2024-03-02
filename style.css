@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(45, 45, 60);
+    color:rgb(247, 151, 159);
+}
+
+.container {
+    height: 600px;
+    width: 400px;
+    margin:auto;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile img {
+    height: 120px;
+    border: 3px solid rgb(247, 151, 159);
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(247, 151, 159, 0.5);
+}
+
+.profile p {
+    font-weight: bold;
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgb(247, 151, 159);
+    width: 150px;
+    box-shadow: 1px 1px 5px rgba(247, 151, 159, 0.5);
+}
+
+ul {
+    padding: 0;
+}
+
+.information ul li {
+   margin: 0;
+   padding: 10px;
+   text-align: center;
+   list-style: none;
+
+}
+
+.name {
+    font-weight: bold;
+}
+
+.information ul li:hover {
+    background-color: rgba(247, 151, 159, 0.6);
+    width: 300px;;
+    border-radius: 150px;
+    color: whitesmoke;
+    margin: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    padding: 20px;
+    ion-icon {
+        color: rgb(247, 151, 159);
+      }
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.social-links a:hover {
+    background-color: rgba(247, 151, 159, 0.6);
+    ion-icon {
+        color: rgb(255, 255, 255);
+      }
+}
+
+.fundo {
+    background-color: rgb(136, 197, 216);
+    width: 420px;
+    height: 420px;
+    border-radius: 210px;
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    opacity: 0.1 ;
+    filter: blur(80px);
+
+}
